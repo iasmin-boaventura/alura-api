@@ -4,36 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3fa27a2b-bd6b-44ee-a2b2-555598ed5b59" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/alura-consumindo-api.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/calculos/CalculadoraDeTempo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/calculos/Classificavel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/calculos/FiltroRecomendacao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/excecoes/ErroDeConversaoDeAnoException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/excecoes/SenhaInvalidaException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelos/ConexaoApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelos/Editora.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelos/Episodio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelos/Filme.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelos/Livro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelos/Pessoa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelos/Senha.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelos/Serie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelos/Titulo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelos/TituloOMDb.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelos/Veiculo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/principal/ExerciciosAula1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/principal/ExerciciosAula2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/principal/ExerciciosAula3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/principal/ExerciciosAula4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/principal/Principal.java" afterDir="false" />
+    <list default="true" id="3fa27a2b-bd6b-44ee-a2b2-555598ed5b59" name="Changes" comment="api, exceptions, json">
+      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/projeto/ErroCepInvalidoException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/projeto/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/projeto/Requisicoes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +42,9 @@
     "Application.ExerciciosAula2.executor": "Run",
     "Application.ExerciciosAula3.executor": "Run",
     "Application.ExerciciosAula4.executor": "Run",
+    "Application.Main.executor": "Run",
     "Application.Principal.executor": "Run",
+    "Application.Requisicoes.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
@@ -94,33 +71,7 @@
       <recent name="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelos" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ExerciciosAula4">
-    <configuration name="ExerciciosAula1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.com.alura.screenmatch.principal.ExerciciosAula1" />
-      <module name="alura-consumindo-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.alura.screenmatch.principal.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExerciciosAula2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.com.alura.screenmatch.principal.ExerciciosAula2" />
-      <module name="alura-consumindo-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.alura.screenmatch.principal.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="ExerciciosAula3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.alura.screenmatch.principal.ExerciciosAula3" />
       <module name="alura-consumindo-api" />
@@ -147,6 +98,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.alura.screenmatch.projeto.Main" />
+      <module name="alura-consumindo-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.alura.screenmatch.projeto.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.alura.screenmatch.principal.Principal" />
       <module name="alura-consumindo-api" />
@@ -160,13 +124,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Requisicoes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.alura.screenmatch.projeto.Requisicoes" />
+      <module name="alura-consumindo-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.alura.screenmatch.projeto.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Requisicoes" />
         <item itemvalue="Application.ExerciciosAula4" />
         <item itemvalue="Application.Principal" />
         <item itemvalue="Application.ExerciciosAula3" />
-        <item itemvalue="Application.ExerciciosAula2" />
-        <item itemvalue="Application.ExerciciosAula1" />
       </list>
     </recent_temporary>
   </component>
@@ -192,12 +169,25 @@
       <workItem from="1723039810998" duration="5099000" />
       <workItem from="1723125715627" duration="7599000" />
       <workItem from="1723215026065" duration="3031000" />
-      <workItem from="1723467165093" duration="9064000" />
+      <workItem from="1723467165093" duration="10574000" />
     </task>
+    <task id="LOCAL-00001" summary="api, exceptions, json">
+      <option name="closed" value="true" />
+      <created>1723489712426</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1723489712426</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="api, exceptions, json" />
+    <option name="LAST_COMMIT_MESSAGE" value="api, exceptions, json" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
