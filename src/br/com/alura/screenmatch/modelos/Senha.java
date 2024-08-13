@@ -1,6 +1,6 @@
 package br.com.alura.screenmatch.modelos;
 
-import br.com.alura.screenmatch.excecoes.SenhaInvalidaException;
+import br.com.alura.screenmatch.projeto.excecoes.SenhaInvalidaException;
 
 public class Senha {
     private String senha;

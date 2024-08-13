@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3fa27a2b-bd6b-44ee-a2b2-555598ed5b59" name="Changes" comment="api, exceptions, json">
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/projeto/ErroCepInvalidoException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/projeto/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/projeto/Requisicoes.java" afterDir="false" />
+    <list default="true" id="3fa27a2b-bd6b-44ee-a2b2-555598ed5b59" name="Changes" comment="projeto">
+      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/projeto/Endereco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/projeto/GeraArquivo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/alura/screenmatch/excecoes/ErroDeConversaoDeAnoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/projeto/excecoes/ErroDeConversaoDeAnoException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/alura/screenmatch/excecoes/SenhaInvalidaException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/projeto/excecoes/SenhaInvalidaException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelos/Senha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelos/Senha.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelos/Titulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/modelos/Titulo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/alura/screenmatch/principal/ExerciciosAula3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/principal/ExerciciosAula3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/alura/screenmatch/principal/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/principal/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/alura/screenmatch/projeto/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/projeto/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/alura/screenmatch/projeto/Requisicoes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/alura/screenmatch/projeto/ConsultaCep.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,33 +42,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.ExerciciosAula1.executor": "Run",
-    "Application.ExerciciosAula2.executor": "Run",
-    "Application.ExerciciosAula3.executor": "Run",
-    "Application.ExerciciosAula4.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.Principal.executor": "Run",
-    "Application.Requisicoes.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/iasminb/Desktop/java/alura-consumindo-api/src/br/com/alura/screenmatch/calculos",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/Users/iasminb/Desktop/java/alura-consumindo-api/src/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.ExerciciosAula1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ExerciciosAula2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ExerciciosAula3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ExerciciosAula4.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Principal.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Requisicoes.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/iasminb/Desktop/java/alura-consumindo-api/src/br/com/alura/screenmatch/calculos&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/iasminb/Desktop/java/alura-consumindo-api/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="br.com.alura.screenmatch.excecoes" />
@@ -72,6 +79,19 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
+    <configuration name="ConsultaCep" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.alura.screenmatch.projeto.ConsultaCep" />
+      <module name="alura-consumindo-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.alura.screenmatch.projeto.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ExerciciosAula3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.alura.screenmatch.principal.ExerciciosAula3" />
       <module name="alura-consumindo-api" />
@@ -124,23 +144,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Requisicoes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.com.alura.screenmatch.projeto.Requisicoes" />
-      <module name="alura-consumindo-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.alura.screenmatch.projeto.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Requisicoes" />
+        <item itemvalue="Application.ConsultaCep" />
         <item itemvalue="Application.ExerciciosAula4" />
         <item itemvalue="Application.Principal" />
         <item itemvalue="Application.ExerciciosAula3" />
@@ -169,7 +176,8 @@
       <workItem from="1723039810998" duration="5099000" />
       <workItem from="1723125715627" duration="7599000" />
       <workItem from="1723215026065" duration="3031000" />
-      <workItem from="1723467165093" duration="10574000" />
+      <workItem from="1723467165093" duration="10736000" />
+      <workItem from="1723554312525" duration="7191000" />
     </task>
     <task id="LOCAL-00001" summary="api, exceptions, json">
       <option name="closed" value="true" />
@@ -179,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723489712426</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="projeto">
+      <option name="closed" value="true" />
+      <created>1723491497692</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1723491497692</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,7 +203,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="api, exceptions, json" />
-    <option name="LAST_COMMIT_MESSAGE" value="api, exceptions, json" />
+    <MESSAGE value="projeto" />
+    <option name="LAST_COMMIT_MESSAGE" value="projeto" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

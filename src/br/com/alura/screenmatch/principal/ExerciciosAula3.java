@@ -1,9 +1,8 @@
 package br.com.alura.screenmatch.principal;
 
-import br.com.alura.screenmatch.excecoes.SenhaInvalidaException;
+import br.com.alura.screenmatch.projeto.excecoes.SenhaInvalidaException;
 import br.com.alura.screenmatch.modelos.Senha;
 
-import java.nio.channels.ScatteringByteChannel;
 import java.util.Scanner;
 
 public class ExerciciosAula3 {

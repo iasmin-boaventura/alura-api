@@ -1,36 +1,41 @@
 package br.com.alura.screenmatch.projeto;
 
+import com.google.gson.Gson;
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
-public class Requisicoes {
-    public String formataCep(String cep) {
-        return cep.replaceAll("[^0-9]", "");
-    }
+public class ConsultaCep {
+    private String validaCep(String cep) {
+        cep = cep.replaceAll("[^0-9]", ""); //deixa apenas números na string
 
-    public void validaCep(String cep) {
         if (cep.length() != 8){
             throw new ErroCepInvalidoException("O CEP deve conter 8 números.");
         }
+
+        return cep;
     }
 
-    public String fazRequisicao(String cep){
-        validaCep(cep);
+    public Endereco fazRequisicao(String cep){
+        cep = validaCep(cep);
+
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create("https://viacep.com.br/ws/"+ cep + "/json/"))
                 .build();
-        HttpResponse<String> response = null;
+
         try {
+            HttpResponse<String> response = null;
             response = client
                     .send(request, HttpResponse.BodyHandlers.ofString());
+
+            return new Gson().fromJson(response.body(), Endereco.class);
+
         } catch (IOException | InterruptedException e) {
             throw new RuntimeException(e);
-        }
 
-        return response.body();
+        }
     }
 }

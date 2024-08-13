@@ -1,6 +1,6 @@
 package br.com.alura.screenmatch.principal;
 
-import br.com.alura.screenmatch.excecoes.ErroDeConversaoDeAnoException;
+import br.com.alura.screenmatch.projeto.excecoes.ErroDeConversaoDeAnoException;
 import br.com.alura.screenmatch.modelos.ConexaoApi;
 import br.com.alura.screenmatch.modelos.Titulo;
 import br.com.alura.screenmatch.modelos.TituloOMDb;

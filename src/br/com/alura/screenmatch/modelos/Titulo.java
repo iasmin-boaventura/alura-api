@@ -1,8 +1,7 @@
 package br.com.alura.screenmatch.modelos;
 
-import br.com.alura.screenmatch.excecoes.ErroDeConversaoDeAnoException;
-import br.com.alura.screenmatch.excecoes.SenhaInvalidaException;
-import com.google.gson.annotations.SerializedName;
+import br.com.alura.screenmatch.projeto.excecoes.ErroDeConversaoDeAnoException;
+import br.com.alura.screenmatch.projeto.excecoes.SenhaInvalidaException;
 
 public class Titulo implements Comparable<Titulo>{
     private String titulo;
